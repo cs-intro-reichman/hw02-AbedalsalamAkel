@@ -3,23 +3,18 @@ public class DamkaBoard {
         int n = Integer.parseInt(args[0]);
 
         for (int i = 0; i < n; i++) {
+            // For even rows, start with an asterisk, for odd rows, start with a space
+            boolean startWithAsterisk = i % 2 == 0;
+
             for (int j = 0; j < n; j++) {
-                
-                if ((i + j) % 2 == 0) {
-                    if (j == n - 1) {
-                        System.out.print("*"); 
-                    } else {
-                        System.out.print("* "); 
-                    }
+                if (startWithAsterisk) {
+                    System.out.print((j % 2 == 0) ? "* " : "  "); // Print "* " for even-indexed columns, "  " for odd
                 } else {
-                    if (j == n - 1) {
-                        System.out.print(" "); 
-                    } else {
-                        System.out.print("  "); 
-                    }
+                    System.out.print((j % 2 == 0) ? "  " : "* "); // Print "  " for even-indexed columns, "* " for odd
                 }
             }
-            System.out.println(); 
+            System.out.println();
         }
     }
 }
+
