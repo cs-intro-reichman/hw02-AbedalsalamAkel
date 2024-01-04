@@ -1,20 +1,10 @@
 public class Reverse {
-    public static void main(String[] args) {
-       
-        String a = args[0];
-        String r = "";
-
-       
-        for (int i = a.length() - 1; i >= 0; i--) {
-            r += a.charAt(i);
-        }
-
-       
-        System.out.println(r);
-
-        if (a.length() > 0) {
-            char middleCharacter = a.charAt(a.length() / 2);
-            System.out.println("The middle character is " + middleCharacter);
-        }
-    }
+public static void main (String[] args){
+String x = args[0];
+int n = x.length();
+for (int i = 0; i < n; i++) {
+System.out.print(x.charAt((n - i) - 1)); }
+System.out.println(""); if ((n%2) == 0) {
+n--; }
+System.out.println("The middle character is " + (x.charAt(n / 2))); }
 }
