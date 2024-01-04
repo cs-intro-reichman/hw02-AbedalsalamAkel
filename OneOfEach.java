@@ -1,21 +1,18 @@
 public class OneOfEach {
-    public static void main(String[] args) {
-        boolean hasBoy = false;
-        boolean hasGirl = false;
-        int childrenCount = 0;
-
-        // Keep simulating until there is at least one boy and one girl
-        while (!hasBoy || !hasGirl) {
-            if (Math.random() < 0.5) {
-                System.out.print("b ");
-                hasBoy = true;
-            } else {
-                System.out.print("g ");
-                hasGirl = true;
-            }
-            childrenCount++;
-        }
-
-        System.out.println("\nYou made it... and you now have " + childrenCount + " children.");
-    }
+public static void main (String[] args) {
+//// Put your code here
+oneOfEach(); }
+public static void oneOfEach() { String children = "";
+int numOfBoys = 0;
+int numOFGirls = 0;
+while (numOfBoys == 0 || numOFGirls == 0) { double f = Math.random();
+if (f < 0.5) {
+children += "b";
+numOfBoys++; }
+else{
+children += "g"; numOFGirls++;
 }
+children += " "; }
+System.out.println(children);
+System.out.println("You made it. . . and you now have " + numOFGirls+numOfBoys + " children.");
+} }
