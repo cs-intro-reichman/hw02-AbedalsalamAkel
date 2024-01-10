@@ -1,3 +1,11 @@
+/*
+#feedback
+1. Try to use a meaningful names for variable. for example in this code:
+n_next instead of n2
+2. beside that,
+great written code!
+*/
+
 public class InOrder {
     public static void main(String[] args) {
         int n = (int) (Math.random() * 10); 
