@@ -1,3 +1,10 @@
+/*
+#feedback
+
+1. Try to use indentations to make your code more readable,
+It will help to debug it later on
+*/
+
 public class OneOfEachStats1{
 public static void main (String[] args) {
 //// Put your code here
